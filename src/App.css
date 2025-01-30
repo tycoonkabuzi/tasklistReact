@@ -11,13 +11,24 @@
   will-change: filter;
   transition: filter 300ms;
 }
+.list-tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
+input {
+  height: 30px;
+  margin-right: 20px;
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

@@ -5,12 +5,12 @@ const Task = React.memo(({ task, setTask }) => {
   const deleteItem = useCallback(
     (theTask) => {
       console.log("Delete Mounted");
-      const filteredList = task.filter((element, index) => {
+      const filteredList = task.filter((_, index) => {
         return index != theTask;
       });
       setTask(filteredList);
     },
-    [setTask]
+    [task]
   );
 
   return (
